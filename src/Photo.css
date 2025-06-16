@@ -1,0 +1,36 @@
+.photo-gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.gallery-item {
+  display: flex;
+  margin-bottom: 3rem;
+  gap: 2rem;
+  align-items: center;
+}
+
+.image-container {
+  flex: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-content {
+  flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gallery-item {
+    flex-direction: column;
+  }
+}
